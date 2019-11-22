@@ -1,0 +1,19 @@
+#main{
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+
+#main-form{
+  background-color: antiquewhite;
+  width: 100%;
+  padding: 10%;
+}
+
+#username,#password{
+  margin-top: 10%;
+}
+
+#msg-error{
+  color: red;
+}
