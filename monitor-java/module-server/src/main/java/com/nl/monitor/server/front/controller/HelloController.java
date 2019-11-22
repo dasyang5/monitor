@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/")
-public class HelloworldController {
+public class HelloController {
 
     @RequestMapping("/")
     public ResponseMsg hello() {
-
         return ResponseMsg.success();
-
     }
 }
