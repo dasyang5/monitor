@@ -11,7 +11,8 @@
                                    :option="option.itemOption" style="height: 330px;overflow: auto"></component>
                     </el-tab-pane>
                     <el-tab-pane label="数据绑定" name="third">
-                        <component :is="dataEdits[option.mainOption.editType]" :dataOption="option.dataOption"></component>
+                        <component :is="dataEdits[option.mainOption.editType]"
+                                   :option="option"></component>
                     </el-tab-pane>
                     <el-tab-pane label="触发器" name="fourth">定时任务补偿</el-tab-pane>
                 </el-tabs>

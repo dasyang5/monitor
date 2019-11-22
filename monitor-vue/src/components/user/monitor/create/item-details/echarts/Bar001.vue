@@ -23,17 +23,7 @@
                 //如果没有被编辑过，加入初始值
                 if (!this.option.isEdit) {
                     this.option.itemOption = {
-                        dataset: {
-                            source: [
-                                ['key', 'value'],
-                                ['A', 41.1],
-                                ['B', 86.5],
-                                ['C', 34.1],
-                                ['D', 24.1],
-                                ['E', 11.1],
-                                ['F', 13.1]
-                            ]
-                        },
+                        dataset: {},
                         title: {
                             show: true,
                             text: "Bar",
@@ -120,6 +110,25 @@
                             barMinWidth: "1%"
                         }]
                     };
+                    this.option.dataOption = [
+                        {
+                            type: '',
+                            detail: {},
+                            example: {
+                                source: [
+                                    ['key', 'value'],
+                                    ['A', 41.1],
+                                    ['B', 86.5],
+                                    ['C', 34.1],
+                                    ['D', 24.1],
+                                    ['E', 11.1],
+                                    ['F', 13.1]
+                                ]
+                            }
+                        }
+                    ];
+                    //初始数据预置为示例数据
+                    this.option.itemOption.dataset = this.option.dataOption[0].example;
                 }
             }
         },

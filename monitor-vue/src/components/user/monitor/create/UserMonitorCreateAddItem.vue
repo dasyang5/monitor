@@ -46,10 +46,8 @@
                     },
                     //组件样式配置信息
                     itemOption: {},
-                    //数据配置信息
-                    dataOption: {
-                        type: '' //数据绑定的类型
-                    },
+                    //数据配置信息 数组
+                    dataOption: [],
                     //触发器配置信息
                     triggerOption: {}
                 }
